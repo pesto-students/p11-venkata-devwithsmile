@@ -14,29 +14,49 @@
    
          /* Your solution goes here */
    
-   
+         span{
+            color: red;
+         }
+         label{
+            display: inline-block;
+            padding: 10px;
+            width: 120px;
+         }
+
+         input{
+           padding: 10px;
+           width: 300px;
+         }
+
+         .required{
+            background-color: rgb(175, 236, 236);
+         }
       </style>
    </head>
    <body>
       <h1>Rate a Product</h1>
-      <p><span class="required"></span> indicates required field.</p>
+      <p><span>*</span> indicates required field.</p>
       <form>
          <div>
-            <label class="required">Product</label>
-            <input type="text" name="title">
+            <label >Product<span >*</span></label>
+            <input type="text" name="title" class="required">
          </div>
+
          <div>
-            <label class="required">Purchase Date</label>
-            <input type="date" name="purchase-date">
+            <label >Purchase Date<span >*</span></label>
+            <input type="date" name="purchase-date" class="required">
          </div>
+
          <div>
-            <label class="required">Rating</label>
-            <input type="number" name="rating" value="4" min="1" max="4">
+            <label >Rating<span >*</span></label>
+            <input type="number" name="rating" value="4" min="1" max="4" class="required">
          </div> 
+
          <div> 
             <label>Comments</label>      
             <textarea rows="3" cols="50" name="comments"></textarea> 
          </div>
+      
          <input type="submit" value="Submit Rating">
       </form>
    </body>
