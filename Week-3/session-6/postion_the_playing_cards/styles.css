@@ -8,6 +8,7 @@
  
  .cardRed {
     color: red;
+   
  }
  
  .cardBlack {
@@ -27,7 +28,8 @@
     position: relative;
     left: 280px;
     border-radius: 5px;
-    box-shadow: 3px 5px;
+    box-shadow: 3px 5px black;
+   
     
  
  }      
@@ -64,16 +66,15 @@
  }
  
  .topLeft {
-    /* Part of your solution goes here */
- position: absolute;
- top: 0px;
- right: 66px;
- 
- }
+   /* Part of your solution goes here */
+   position: absolute;
+   top: 0px;
+   right: 66px;
+   }
  
  .bottomRight {
-    /* Part of your solution goes here */
- position: absolute;
- top: 120px;
- right: 5px;
+   /* Part of your solution goes here */
+   position: absolute;
+   top: 120px;
+   right: 5px;
  }
