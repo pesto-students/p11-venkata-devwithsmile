@@ -26,7 +26,7 @@ const appendAlert = (message, type) => {
   alertPlaceholder.append(wrapper)
 }
 
-const alertTrigger = document.getElementById('send-message-btn')
+const alertTrigger = document.getElementById('modalsend')
 if (alertTrigger) {
   alertTrigger.addEventListener('click', () => {
     appendAlert('Thank You, We will Contact you soon!', 'success')
